@@ -10,7 +10,6 @@ export class TestConsumers implements OnModuleInit {
       { topics: ['test'] },
       {
         eachMessage: async ({ topic, partition, message }) => {
-          console.log('a');
         },
       },
     );
